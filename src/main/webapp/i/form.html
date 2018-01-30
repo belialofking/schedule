@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+	
+	<title>AI+ 主题模板</title>
+    <meta name="keywords" content="AI+ 主题模板"/>
+    <meta name="description" content="AI+ 主题模板"/>
+	
+	<link rel="stylesheet" type="text/css" href="../static/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/font.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/js/editor/editor.css">
+	<link rel="stylesheet" type="text/css" href="../static/js/editor/froala_style.css">
+    <link rel="stylesheet" type="text/css" href="../static/js/editor/editor-font.css">
+	<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery.aiui.js"></script>
+	
+</head>
+<body>
+    <div class="I-con">
+        <div class="I-row">
+		    <div class="I-nav">
+				<li><a class="on" href="javascript:;">表单</a></li>
+			</div>
+			<form class="J_form" name="form" method="post" action="">
+				<div class="F-item">
+					<div class="F-txt">下拉框</div>
+					<div class="F-con">
+						<div class="F-row">
+							<div class="J_select">
+								<select name="quiz1">
+									<option value="">请选择省</option>
+									<option value="1" selected="">浙江省</option>
+									<option value="2">江西省</option>
+									<option value="3">福建省</option>
+								</select>
+								<div class="select-txt">
+									<input class="select-input" type="text" placeholder="请选择" readonly="">
+									<i class="icon ai-triangle"></i>
+								</div>
+								<div class="select-con">
+									<dl>
+										<dd value="1" class="on">浙江省</dd>
+										<dd value="2" class="">江西省</dd>
+										<dd value="3" class="">福建省</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="J_select">
+								<select name="quiz1">
+									<option value="">请选择省</option>
+									<option value="1" selected="">浙江省</option>
+									<option value="2">江西省</option>
+									<option value="3">福建省</option>
+								</select>
+								<div class="select-txt">
+									<input class="select-input" type="text" placeholder="请选择" readonly="">
+									<i class="icon ai-triangle"></i>
+								</div>
+								<div class="select-con">
+									<dl>
+										<dd value="1" class="on">浙江省</dd>
+										<dd value="2" class="">江西省</dd>
+										<dd value="3" class="">福建省</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="F-item">
+					<div class="F-txt">复选框</div>
+					<div class="F-con">
+						<div class="F-row">
+							<input class="J_checkbox" type="checkbox" name="" value="" title="写作">
+							<input class="J_checkbox" type="checkbox" name="" value="" title="阅读" checked="">
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">单选框</div>
+					<div class="F-con">
+						<div class="F-row">
+							<input class="J_radio" type="radio" name="1" value="女" checked="checked">
+							<input class="J_radio" type="radio" name="1" value="男">
+							<input class="J_radio" type="radio" name="1" value="保密">
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">输入框+按钮</div>
+					<div class="F-con">
+						<div class="F-row">
+							<div class="I-4 input-btn">
+								<input type="text">
+								<label><button class="J_copy" type="button">复制</button></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">上传文件</div>
+					<div class="F-con">
+						<div class="F-row">
+				            <div class="I-4 I-file">
+								<input class="J_file" name="" type="text" value="">
+								<label><input class="J_file" type="file">上传</label>
+							</div>
+						</div>
+						<div class="F-row">
+							<div class="I-12">
+								<div class="I-img">
+									<input class="J_img" name="img" type="hidden">
+									<dd><i class="icon ai-up-img"></i><input class="J_file" type="file"></dd>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">文本框</div>
+					<div class="F-con">
+						<div class="F-row">
+							<div class="I-4"><input class="input-t" id="curl" name="title" type="text" value="25"></div>
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">密码框</div>
+					<div class="F-con">
+						<div class="F-row">
+							<div class="I-4"><input class="input-t" id="curl" name="icp" type="text" value="***"></div>
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">文本域</div>
+					<div class="F-con">
+						<div class="F-row">
+							<div class="I-8"><textarea rows="4" cols="20">文本域</textarea></div>
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">是否开启</div>
+					<div class="F-con">
+						<div class="F-row">
+							<div class="btn-no">
+								<label class="J_no btn no">开 启</label>
+								<input class="J_open" name="open" value="0" type="radio">
+								<input class="J_shut" name="open" value="1" type="radio" >
+								<label class="J_off btn off">关 闭</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">日期</div>
+					<div class="F-con">
+						<div class="F-row">
+							<input class="laydate-icon" placeholder="请输入日期" onclick="laydate()">
+						</div>
+					</div>
+				</div>
+				<div class="F-item">
+					<div class="F-txt">邮箱</div>
+					<div class="F-con">
+						<div class="F-row">
+							<div class="I-4"><input class="input-t" id="curl" name="tel" type="text" value="xxx@qq.com"></div>
+						</div>
+					</div>
+				</div>
+				<div class="F-submit">
+					<button class="btn btn-submit" type="submit">提交</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type='text/javascript' src='../static/js/editor/editor.js'></script>
+	<script type="text/javascript" src="../static/js/editor/zh_cn.js"></script>
+	<script type="text/javascript" src="../static/js/date/date.js"></script>
+</body>
+</html>
