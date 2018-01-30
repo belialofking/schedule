@@ -1,4 +1,4 @@
-package me.schedule.user;
+package me.schedule.framework;
 
 import org.nutz.ioc.loader.annotation.IocBean;
 import org.nutz.mvc.annotation.At;

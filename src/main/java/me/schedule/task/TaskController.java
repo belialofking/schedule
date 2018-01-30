@@ -1,7 +1,7 @@
 package me.schedule.task;
 
 import me.schedule.project.ProjectModel;
-import me.schedule.user.UserModel;
+import me.schedule.framework.UserModel;
 import org.nutz.dao.Dao;
 import org.nutz.ioc.loader.annotation.Inject;
 import org.nutz.ioc.loader.annotation.IocBean;

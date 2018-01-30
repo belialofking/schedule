@@ -18,7 +18,7 @@ public class TaskModel {
     @Column(hump = true)
     private int projectId;
     @Column(hump = true)
-    private int userId;
+    private String userId;
     @Column
     private int progress;
     @Column

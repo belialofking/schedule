@@ -1,6 +1,7 @@
 package me.schedule;
 
-import me.schedule.user.UserModel;
+import me.schedule.framework.UserModel;
+import me.schedule.utils.IdUtil;
 import org.nutz.dao.Dao;
 import org.nutz.dao.util.Daos;
 import org.nutz.ioc.Ioc;
@@ -16,9 +17,9 @@ public class MainSetup implements Setup {
         //Daos.migration(dao, "me.schedule.task", true, true);
         // 初始化默认根用户
         if (dao.count(UserModel.class) == 0) {
-
             UserModel user = new UserModel();
             //"admin","管理员","123456"
+            user.setUserId("super");
             user.setLoginName("admin");
             user.setRealName("管理员");
             user.setPassword("123456");

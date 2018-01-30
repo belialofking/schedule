@@ -1,4 +1,4 @@
-package me.schedule.user;
+package me.schedule.framework;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,19 +11,18 @@ import org.nutz.dao.entity.annotation.Table;
 @NoArgsConstructor
 @Table("tbl_user")
 public class UserModel {
-
-    @Id
-    private long id;
     @Name
-    @Column("login_name")
+    @Column(hump = true)
+    private String userId;
+    @Column(hump = true)
     private String loginName;
-    @Column("real_name")
+    @Column(hump = true)
     private String realName;
     @Column
     private String password;
-    @Column("real_phone")
+    @Column(hump = true)
     private String realPhone;
-    @Column("real_email")
+    @Column(hump = true)
     private String realEmail;
 
 }

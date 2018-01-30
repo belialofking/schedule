@@ -1,4 +1,4 @@
-package me.schedule.home;
+package me.schedule.framework;
 
 import lombok.Data;
 

@@ -1,6 +1,5 @@
-package me.schedule.home;
+package me.schedule.framework;
 
-import me.schedule.user.UserModel;
 import org.nutz.dao.Cnd;
 import org.nutz.dao.Dao;
 import org.nutz.ioc.loader.annotation.Inject;
@@ -10,7 +9,6 @@ import org.nutz.log.Logs;
 import org.nutz.mvc.Mvcs;
 import org.nutz.mvc.View;
 import org.nutz.mvc.annotation.*;
-import org.nutz.mvc.view.JspView;
 import org.nutz.mvc.view.ServerRedirectView;
 
 @IocBean
@@ -34,13 +32,14 @@ public class HomeController {
             Mvcs.getHttpSession().setAttribute("login_message", "用户名不能为空！!");
             return LOGIN_VIEW;
         }
-        UserModel user = dao.fetch(UserModel.class,username);
+        UserModel user = dao.fetch(UserModel.class, Cnd.where("login_name","=",username));
         if (user == null || !user.getPassword().equals(password)) {
             Logs.get().info("用户名或密码错误:" + username);
             Mvcs.getHttpSession().setAttribute("login_message", "用户名或密码错误!");
             return LOGIN_VIEW;
         }
-        Mvcs.getHttpSession().setAttribute("login_user", user.getLoginName());
+        Mvcs.getHttpSession().setAttribute(Constant.__LOGIN_ID__, user.getUserId());
+        Mvcs.getHttpSession().setAttribute(Constant.__IS_LOGIN__, true);
         Logs.get().debug("登录成功！");
         return MAIN_VIEW;
     }
@@ -53,6 +52,7 @@ public class HomeController {
 
     @At
     @Ok("jsp:view.main")
+    @Authority("main")
     public void main(){
 
     }
