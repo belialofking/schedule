@@ -22,8 +22,6 @@ public class ResourceModel {
     @Column(hump = true)
     private String resourceIcon;
     @Column(hump = true)
-    private int resourceLevel;
-    @Column(hump = true)
     private String parentId;
     @Column(hump = true)
     private String resourceUrl;

@@ -42,6 +42,9 @@ public class AuthorityService {
         }
         return false;
     }
+    public List<ResourceModel> queryResourceByParent(String parentId){
+        return dao.query(ResourceModel.class,Cnd.where("parent_id","=" ,parentId));
+    }
 
 
 }

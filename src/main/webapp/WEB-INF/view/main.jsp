@@ -1,121 +1,187 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
-    <title>管理系统</title>
+<%@ include file="include/_header.jsp" %>
+<%@ include file="include/_menu.jsp" %>
 
-    <link rel="stylesheet" type="text/css" href="${base}/static/css/ai.css">
-    <link rel="stylesheet" type="text/css" href="${base}/static/css/font.min.css">
-    <script type="text/javascript" src="${base}/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="${base}/static/js/jquery.tab.js"></script>
-</head>
-<body style="overflow:hidden">
-<div class="header">
-    <div class="user">
-        <div class="user-con">
-            <div class="user-img"><img src="static/img/a1.jpg"></div>
-            <div class="user-info">
-                <span>管理员</span>
-                <span>超级管理员</span>
-                <span><a href="/logout"><span>退出</span></a></span>
-            </div>
+    <section class="Hui-article-box">
+        <nav class="breadcrumb">
+            <i class="Hui-iconfont"></i>
+            <a href="/" class="maincolor">首页</a>
+        </nav>
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <p class="f-20 text-success">欢迎使用H-ui.admin
+                    <span class="f-14">v2.3</span>
+                    后台模版！</p>
+                <p>登录次数：18 </p>
+                <p>上次登录IP：222.35.131.79.1 上次登录时间：2014-6-14 11:19:55</p>
+                <table class="table table-border table-bordered table-bg">
+                    <thead>
+                        <tr>
+                            <th colspan="7" scope="col">信息统计</th>
+                        </tr>
+                        <tr class="text-c">
+                            <th>统计</th>
+                            <th>资讯库</th>
+                            <th>图片库</th>
+                            <th>产品库</th>
+                            <th>用户</th>
+                            <th>管理员</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-c">
+                            <td>总数</td>
+                            <td>92</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>8</td>
+                            <td>20</td>
+                        </tr>
+                        <tr class="text-c">
+                            <td>今日</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class="text-c">
+                            <td>昨日</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class="text-c">
+                            <td>本周</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class="text-c">
+                            <td>本月</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-border table-bordered table-bg mt-20">
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="col">服务器信息</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th width="30%">服务器计算机名</th>
+                            <td>
+                                <span id="lbServerName">http://127.0.0.1/</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>服务器IP地址</td>
+                            <td>192.168.1.1</td>
+                        </tr>
+                        <tr>
+                            <td>服务器域名</td>
+                            <td>www.h-ui.net</td>
+                        </tr>
+                        <tr>
+                            <td>服务器端口 </td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>服务器IIS版本 </td>
+                            <td>Microsoft-IIS/6.0</td>
+                        </tr>
+                        <tr>
+                            <td>本文件所在文件夹 </td>
+                            <td>D:\WebSite\HanXiPuTai.com\XinYiCMS.Web\</td>
+                        </tr>
+                        <tr>
+                            <td>服务器操作系统 </td>
+                            <td>Microsoft Windows NT 5.2.3790 Service Pack 2</td>
+                        </tr>
+                        <tr>
+                            <td>系统所在文件夹 </td>
+                            <td>C:\WINDOWS\system32</td>
+                        </tr>
+                        <tr>
+                            <td>服务器脚本超时时间 </td>
+                            <td>30000秒</td>
+                        </tr>
+                        <tr>
+                            <td>服务器的语言种类 </td>
+                            <td>Chinese (People's Republic of China)</td>
+                        </tr>
+                        <tr>
+                            <td>.NET Framework 版本 </td>
+                            <td>2.050727.3655</td>
+                        </tr>
+                        <tr>
+                            <td>服务器当前时间 </td>
+                            <td>2014-6-14 12:06:23</td>
+                        </tr>
+                        <tr>
+                            <td>服务器IE版本 </td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>服务器上次启动到现在已运行 </td>
+                            <td>7210分钟</td>
+                        </tr>
+                        <tr>
+                            <td>逻辑驱动器 </td>
+                            <td>C:\D:\</td>
+                        </tr>
+                        <tr>
+                            <td>CPU 总数 </td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CPU 类型 </td>
+                            <td>x86 Family 6 Model 42 Stepping 1, GenuineIntel</td>
+                        </tr>
+                        <tr>
+                            <td>虚拟内存 </td>
+                            <td>52480M</td>
+                        </tr>
+                        <tr>
+                            <td>当前程序占用内存 </td>
+                            <td>3.29M</td>
+                        </tr>
+                        <tr>
+                            <td>Asp.net所占内存 </td>
+                            <td>51.46M</td>
+                        </tr>
+                        <tr>
+                            <td>当前Session数量 </td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>当前SessionID </td>
+                            <td>gznhpwmp34004345jz2q3l45</td>
+                        </tr>
+                        <tr>
+                            <td>当前系统用户名 </td>
+                            <td>NETWORK SERVICE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <footer class="footer">
+                <p>感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch
+                    <br> Copyright &copy;2015 H-ui.admin v3.0 All Rights Reserved.
+                    <br> 本后台系统由
+                    <a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
+            </footer>
         </div>
-    </div>
-    <div class="con">
-        <div class="menu">
-            <div class="menu-con">
-                <li class="no">
-                    <a class="J_menu" href="javascript:;" data-id="1"><i class="icon ai-home"></i><span>首页</span></a>
-                </li>
-                <li>
-                    <a class="J_menu" href="javascript:;" data-id="2"><i class="icon ai-users"></i><span>会员管理</span></a>
-                </li>
-                <li>
-                    <a class="J_menu" href="javascript:;" data-id="3"><i class="icon ai-set"></i><span>系统管理</span></a>
-                </li>
-                <li>
-                    <a class="J_menu" href="javascript:;" data-id="4"><i class="icon ai-set"></i><span>任务管理</span></a>
-                </li>
-
-            </div>
-        </div>
-        <div class="tab">
-            <a class="tab-btn J_Left"><i class="icon ai-rew-left"></i></a>
-            <div class="J_Tabs">
-                <div class="page-con">
-                    <a class="no J_Tab" href="javascript:;" data-url="set/home.html">首页</a>
-                </div>
-            </div>
-            <a class="tab-btn J_Right"><i class="icon ai-rew-right"></i></a>
-            <a class="tab-btn J_Home" href="/" target="_blank"><i class="icon ai-home"></i></a>
-        </div>
-    </div>
-</div>
-<ul class="J_nav">
-    <li data-id="1">
-        <dl class="J_fold">
-            <h1><i class="icon ai-user"></i><span>个人中心</span><em class="more"></em></h1>
-            <dd>
-                <a class="J_Item" href="javascript:;" data-url="set/clear.html">清理缓存</a>
-                <a class="J_Item" href="javascript:;" data-url="user/paw.html">修改密码</a>
-            </dd>
-        </dl>
-        <dl class="J_fold">
-            <h1><i class="icon ai-i"></i><span>模板帮助</span><em class="more"></em></h1>
-            <dd>
-                <a class="J_Item" href="javascript:;" data-url="i/icon.html">图标</a>
-                <a class="J_Item" href="javascript:;" data-url="i/btn.html">按钮</a>
-                <a class="J_Item" href="javascript:;" data-url="i/form.html">表单</a>
-                <a class="J_Item" href="javascript:;" data-url="i/table.html">表格</a>
-                <a class="J_Item" href="javascript:;" data-url="i/sku.html">SKU</a>
-            </dd>
-        </dl>
-    </li>
-    <li style="display:none" data-id="2">
-        <dl class="J_fold">
-            <h1><i class="icon ai-users"></i><span>用户管理</span><em class="more"></em></h1>
-            <dd>
-                <a class="J_Item" href="javascript:;" data-url="user/user.html">会员列表</a>
-                <a class="J_Item" href="javascript:;" data-url="user/vip.html">VIP设置</a>
-            </dd>
-        </dl>
-    </li>
-    <li style="display:none" data-id="3">
-        <dl class="J_fold">
-            <h1><i class="icon ai-set"></i><span>系统管理</span><em class="more"></em></h1>
-            <dd>
-                <a class="J_Item" href="javascript:;" data-url="set/set.html">系统设置</a>
-                <a class="J_Item" href="javascript:;" data-url="nav/nav.html">节点管理</a>
-            </dd>
-        </dl>
-    </li>
-    <li style="display:none" data-id="4">
-        <dl class="J_fold">
-            <h1><i class="icon ai-set"></i><span>任务管理</span><em class="more"></em></h1>
-            <dd>
-                <a class="J_Item" href="javascript:;" data-url="/project/index">项目管理</a>
-                <a class="J_Item" href="javascript:;" data-url="/task/index">任务管理</a>
-                <a class="J_Item" href="javascript:;" data-url="nav/nav.html">进度管理</a>
-            </dd>
-        </dl>
-    </li>
-</ul>
-<div class="J_main">
-    <iframe class="J_iframe" src="set/home.html" data-url="set/home.html"></iframe>
-</div>
-<div class="footer">
-    <div class="copy"></div>
-</div>
-<ul class="J_click">
-    <li><a href="javascript:;">取消操作</a></li>
-    <li><a href="javascript:;" data-event="fresh">重新加载</a></li>
-    <li><a href="javascript:;" data-event="other">关闭其它</a></li>
-    <li><a href="javascript:;" data-event="all">全部关闭</a></li>
-</ul>
-</body>
-</html>
+    </section>
+<%@ include file="include/_footer.jsp" %>

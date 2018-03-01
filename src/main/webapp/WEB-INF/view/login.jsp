@@ -7,7 +7,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <title>系统登录</title>
-    <link rel="stylesheet" href="${base}/static/css/login.css" />
+    <link rel="stylesheet" href="${base}/static/login.css" />
 
 </head>
 <body>
